@@ -1352,14 +1352,18 @@ Features
     align-items: center;
     flex-direction: column;
     transition: transform .5s;
+    transform: translateX(30px);
 
 }
 .speakers_speaker-img{
-    width: 90%;
-    border-radius: 50%;
+    margin-top: 10px;
+   border-radius: 50%;
+   border: 2px solid grey;
 }
 .speakers_speaker-img img{
-   border-radius: 50%;
+    border-radius: 50%;
+     width: 150px;
+     height: 150px;
 }
 
 .speakers_speaker-content{
@@ -1386,6 +1390,8 @@ Features
 
 
 .animated_text{
+    z-index: 10;
+    transform: translateX(40px);
     justify-content: center;
     display: flex;
     position: absolute;
