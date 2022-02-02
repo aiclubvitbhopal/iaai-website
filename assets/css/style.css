@@ -904,9 +904,34 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 
 
 
+.about_event{
+    padding: 30px;
+}
+
+.about_event-contents{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.about_event-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_event-heading h1{
+    color: #205E9E;
+    font-size: 55px;
+}
 
 
-
+.about_event-content p{
+    text-align: justify;
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
 
 
 
@@ -917,20 +942,25 @@ Features
 ............................ */
 .features_container{
     margin-bottom: 60px;
+    background-color: #E5E9F2;
+    padding-bottom: 30px;
 }
-
+.features{
+    background-color: #E5E9F2;
+}
 .feature{
     width: 100%;
 }
 .features_heading{
+    padding-top: 10px;
     width: 100%;
-    background: white;
+    
 }
 .features_heading h2{
     color: black;
     text-align: center;
-    background-color: white;
-    font-size: 32px;
+    color: #205E9E;
+    font-size: 42px;
     text-transform: uppercase;
     margin-bottom: 30px;
     padding: 7px;
