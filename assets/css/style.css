@@ -1246,6 +1246,13 @@ Features
     margin-top: 70px;
     margin-bottom: 220px;
 }
+#timeline h1{
+  text-align: center;
+  text-transform: uppercase;
+   color: #205E9E;
+   font-size: 38px;
+   font-weight: 500;
+}
 
 .blur{
     filter: blur(8px);
@@ -1352,7 +1359,6 @@ Features
     align-items: center;
     flex-direction: column;
     transition: transform .5s;
-    transform: translateX(30px);
 
 }
 .speakers_speaker-img{
@@ -1382,9 +1388,22 @@ Features
 
 
 .speakers-container:hover{
-    
+  
    transform: scale(1.1);
    transition: all .2s ease-in-out;
+}
+@media (max-width:540px){
+  .speakers-container{
+    transform: translateX(10px);
+  }
+  .animated_text h1{
+    font-size: 10px;
+   
+  }
+  .animated_text span{
+      font-size: 30px;
+  }
+
 }
 
 
@@ -1442,12 +1461,7 @@ Features
     }
   }
 
-  @media (max-width:540){
-      .animated_text h1{
-          margin-left: 20px;
-          font-size: 2px;
-      }
-  }
+  
 
 
 
