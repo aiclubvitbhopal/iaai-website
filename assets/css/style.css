@@ -6,6 +6,17 @@ body {
     font-family: "Nuntino", sans-serif;
     color: white;
     background-color: #F8F8FE;
+    overflow-x: hidden;
+}
+@media (max-width:540px){
+  body{
+    overflow-x: hidden;
+  }
+}
+@media(max-width:990px){
+  body{
+    overflow-x: hidden;
+  }
 }
 
 a {
@@ -715,30 +726,10 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     .about_event {
         flex-direction: column;
     }
-} */
-
-
-/* .about_title h1{
-    text-transform: uppercase;
-    color: #438CFF;
-    font-size: 160px;
-    letter-spacing: 8px;
-    font-family: 'Stylish', sans-serif;
-    text-align: center;
-}
+} 
 
 
 
-.about_carousel{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-  display: grid;
-  grid-template-rows: 500px 100px;
-  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
-  align-items: center;
-  justify-items: center;
-} */
 
 
 
@@ -762,8 +753,6 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
     inset: -60px 0 0 -60px;
     z-index: -1;
     content: "";
-    background: url("../img/about-bg.png") top left;
-    background-repeat: no-repeat;
   }
   @media (max-width: 575px) {
     .about .about-img {
@@ -807,7 +796,7 @@ background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
   }
   @media (max-width: 575px) {
     .about .nav-link {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   .about .tab-content h4 {
