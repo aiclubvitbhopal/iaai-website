@@ -459,6 +459,12 @@ a {
 
 .hero_subtext{
     font-size: 1.3rem;
+    color: #666666;
+}
+
+.hero_middle{
+    font-size: 2.5rem;
+    color: #666666;
 }
 
 
@@ -510,6 +516,7 @@ a {
     font-size: 30px;
     font-weight: lighter;
 }
+
 
 .hero_time {
     display: flex;
@@ -625,6 +632,10 @@ a {
         line-height: 20px;
         margin-bottom: 20px;
     }
+    .hero_middle{
+        color: white;
+        font-size: 18px;
+    }
     #hero .hero-img img {
         padding-top: 35px;
         width: 90%;
@@ -636,6 +647,7 @@ a {
     }
     .hero_subtext{
         font-size: 1rem;
+        color: white;
     }
     .desktop{
         display: none;
