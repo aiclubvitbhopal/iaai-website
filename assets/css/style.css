@@ -182,6 +182,10 @@ a {
     max-width: 90%;
 }
 
+.disabled{
+    background: #ccc;
+}
+
 @media (max-width: 992px) {
     #header .logo {
         font-size: 28px;
@@ -242,6 +246,8 @@ a {
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
+  
+  
     background: #2487ce;
     padding: 8px 20px;
     margin-left: 30px;
@@ -251,6 +257,7 @@ a {
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
+    
     color: #fff;
     background: #3194db;
 }
@@ -445,6 +452,20 @@ a {
     padding-bottom: 0;
 }
 
+.hero_text{
+    color: black;
+    font-size: 2.5rem;
+}
+
+.hero_subtext{
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
 #hero {
     background: rgb(32, 95, 158);
     background: linear-gradient(346deg, rgba(32, 95, 158, 1) 48%, rgba(248, 248, 254, 1) 48%);
@@ -480,10 +501,12 @@ a {
 
 #hero h3 {
     text-align: justify;
-    color: #666666;
+    /* color: #666666; */
+    color: rgb(225, 193, 110);
+    /* color: 	rgb(194, 178, 128); */
     font-family: "Nunito", sans-serif;
     margin: 10px 0 0 0;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: lighter;
 }
 
@@ -555,6 +578,19 @@ a {
 .hero-options {
     margin-top: 30px;
 }
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) { 
+    .mobile{
+        display: none;
+    }
+}
+@media screen and (min-device-width: 991px) and (max-device-width: 2000px) { 
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+    }
+}
 
 @media (max-width: 991px) {
     #hero {
@@ -571,9 +607,10 @@ a {
     #hero .hero-img img {
         width: 90%;
     }
+   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px)  {
     #hero .hero_time span {
         color: white;
     }
@@ -591,6 +628,17 @@ a {
         padding-top: 35px;
         width: 90%;
     }
+    .hero_text{
+        margin-top: 2px;
+        font-size: 1.5rem;
+        color: white;
+    }
+    .hero_subtext{
+        font-size: 1rem;
+    }
+    .desktop{
+        display: none;
+    }
 }
 
 @media (max-width: 575px) {
@@ -598,6 +646,7 @@ a {
         animation: up-down 2s ease-in-out infinite alternate-reverse both;
     }
     #hero h1 {
+        margin-top: 20px;
         font-size: 40px;
     }
     #hero .hero-img img {
@@ -615,6 +664,9 @@ a {
     #hero .btn-get-started {
         font-size: 16px;
         padding: 10px 24px 11px 24px;
+    }
+    .desktop{
+        display: none;
     }
 }
 
@@ -903,6 +955,17 @@ img:nth-child(6) {
     font-size: 18px;
     letter-spacing: 1.5px;
 }
+
+.about-workshop_highlights{
+   font-weight: 600;
+}
+
+
+
+
+
+
+
 
 
 /* ............................
@@ -1293,6 +1356,16 @@ Features
     }
 }
 
+.timeline_img{
+    display: flex;
+    margin-top: 15px;
+    position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%
+    
+}
+
 .timeline-steps .timeline-content {
     width: 10rem;
     text-align: center
@@ -1389,19 +1462,26 @@ Features
 
 @media (max-width:540px) {
     .speakers-container {
-        transform: translateX(10px);
+        transform: translateX(5px);
     }
     .animated_text h1 {
         font-size: 10px;
     }
-    .animated_text span {
-        font-size: 30px;
+    .animated_text .animated_text-content {
+        font-size: 25px;
+    }
+
+    .timeline_img{
+        position: absolute;
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        align-items: center;
     }
 }
 
 .animated_text {
     z-index: 10;
-    transform: translateX(40px);
     justify-content: center;
     display: flex;
     position: absolute;
@@ -1417,7 +1497,7 @@ Features
     text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1), 0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1), 0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1), -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
 }
 
-span {
+/* span {
     transform: scale(0.9);
     display: inline-block;
 }
@@ -1428,7 +1508,7 @@ span:first-child {
 
 span:last-child {
     animation: bopB 1s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
-}
+} */
 
 @keyframes bop {
     0% {
@@ -1760,14 +1840,21 @@ span:last-child {
 }
 
 .specials {
+ 
     overflow: hidden;
 }
+.info_wrapper{
+   
+}
 
-.specials .nav-tabs {
+.specials .nav-tabs { 
+    filter: blur(8px);
+    -webkit-filter: blur(8px); 
     border: 0;
 }
 
 .specials .nav-link {
+   
     border: 0;
     padding: 12px 15px;
     transition: 0.3s;
@@ -1798,13 +1885,21 @@ span:last-child {
 }
 
 .specials .details h3 {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
     color: black
 }
+.accordion{
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
 
 .specials .details p {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
     color: gray;
 }
 
