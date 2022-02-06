@@ -502,8 +502,9 @@ a {
 #hero h3 {
     text-align: justify;
     /* color: #666666; */
-    color: rgb(225, 193, 110);
+    /* color: rgb(225, 193, 110); */
     /* color: 	rgb(194, 178, 128); */
+    color: #666666;
     font-family: "Nunito", sans-serif;
     margin: 10px 0 0 0;
     font-size: 30px;
