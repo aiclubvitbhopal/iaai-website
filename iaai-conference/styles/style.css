@@ -1,3 +1,8 @@
+:root {
+    --surface-color: #fff;
+    --curve: 40;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -696,4 +701,19 @@ img:nth-child(6) {
 .about_conf_img-top img {
     aspect-ratio: 1;
     width: 90%;
+}
+
+.divider{
+    background-image: url(../images/divider.png);
+}
+.about_conf-contents {
+    background-color: rgb(233, 230, 230);
+    border-radius: 15px;
+    padding: 8px 22px;
+    
+ 
+}
+.about_conf-contents p{
+    margin-top: 3rem;
+    font-size: 20px;
 }
