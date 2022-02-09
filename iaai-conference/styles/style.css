@@ -705,8 +705,11 @@ img:nth-child(6) {
 
 .divider{
     background-image: url(../images/divider.png);
+    width: 100%;
+    border: 1.5px solid red;
 }
 .about_conf-contents {
+    width: 100%;
     background-color: rgb(233, 230, 230);
     border-radius: 15px;
     padding: 8px 22px;
