@@ -20,15 +20,17 @@
             alert('Registration will start soon');
         }
     </script>
-    <header id="header" class="fixed-top header">
-        <div class="container d-flex align-items-center justify-content-between">
+    <header id="header" class="fixed-top header ">
+        <div class="topnav container d-flex align-items-center justify-content-between">
             <a href="https://vitbhopal.ac.in/" class="logo"><img src="images/logo (1).png" alt="VIT Bhopal" class="img-fluid"></a>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="./index.html">About</a></li>
-                    <li><a class="nav-link scrollto" href="#">Conference</a></li>
-                    <li><a class="nav-link scrollto " href="#student-coordinator">Student Co-ordinator</a></li>
-                    <li><a class="nav-link scrollto" href="#faculty-incharge">Faculty Incharge</a></li>
+                    <li><a class="nav-link scrollto active" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#papers">Call for Papers</a></li>
+                    <li><a class="nav-link scrollto " href="#student-coordinator">Committees</a></li>
+                    <li><a class="nav-link scrollto" href="#faculty-incharge">Keynote Speakers</a></li>
+                    <li><a class="nav-link scrollto" href="#faculty-incharge">Schedule</a></li>
+                    <li><a class="nav-link scrollto" href="#faculty-incharge">Sponsors</a></li>
                     <li><a class="nav-link scrollto" href="#faculty-incharge">Register</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -63,7 +65,7 @@
                     <span class="sep_line"></span>
                 </span>
                 <!-- <h4>21<sup>st</sup> April - 23<sup>rd</sup> April 2022</h4> -->
-                <h4 class="text-white">First International Conference on</h4>
+                <h4 class="text-red">First International Conference on</h4>
                 <span class="sep_holder">
                     <span class="sep_line"></span>
                 </span>
@@ -73,37 +75,134 @@
                 <span class="sep_holder">
                     <span class="sep_line"></span>
                 </span>
-                <h4 class="text-white">towards industry 4.0</h4>
+                <h4 class="text-red">Towards Industry 4.0</h4>
                 <!-- <span class="sep_holder">
                     <span class="sep_line" style="display: none;"></span>
                 </span> -->
             </div>
             <div class="hero-info">
-                <h4 class="text-white"><i class="fa fa-calendar "> </i> : 21<sup>st</sup> April - 23 <sup>rd</sup> April 2022 </h4>
-                <br>
-                <h4 class="text-white"><i class="fa fa-map-marker "> </i> : Virtual Mode</h4>
+                <h4 class="text-white"><i class="fa fa-calendar"> </i> : 21<sup>st</sup> April - 23 <sup>rd</sup> April 2022 </h4>
+                <h4 class="text-white"><i class="fa fa-map-marker"> </i> : Virtual Mode</h4>
                 <!-- <div style="margin-top: 2rem;" class="d-flex align-items-center justify-content-center" style="width: 100%;">
                     <button type="button" class="glow-on-hover">Register Now</button>
                 </div> -->
             </div>
         </div>
         <div class="row timer_div align-items-center justify-content-center">
-            <div class="col-md-6 timer_div-col">
-                <h4 class="text-white">Conference begins in</h4>
+            <div class="col-lg-3 hero-img">
+                <img class="img-fluid" src="https://aivit.tech/img/logow.png" alt="">
+            </div>
+            <div class="col-lg-6 timer_div-col">
+                <h4 class="text-green ">Conference begins in</h4>
                 <span id="demo"></span>
             </div>
-            <div class="col-md-6 timer_div-col ">
-                <div class="row">
-                    <div class="col-lg-6 hero-img">
-                        <img class="img-fluid" src="https://aivit.tech/img/logow.png" alt="">
+            <!-- <div class="col-md-6 timer_div-col "> -->
+            <!-- <div class="row"> -->
+            <div class="col-lg-3 hero-img">
+                <img class="img-fluid" src="https://aivit.tech/img/aiml.png" alt="">
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
+    <div id="about" class="about">
+        <br><br><br><br><br>
+        <div class="line_head">
+            <span class="line"></span>
+            <h1>ABOUT US</h1>
+            <span class="line"></span>
+        </div>
+        <br>
+        <div class="row about-container">
+            <div class="col-lg-6 ">
+                <br><br>
+                <div class="pic-ctn ">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/img_8.png" class="img-fluid pic rounded" alt="">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/about_img-1.jpeg" class="img-fluid pic rounded " salt="">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/img_8.png" class="img-fluid pic rounded" alt="">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/img_4.png" class="img-fluid pic rounded" alt="">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/img-2.jpg" class="img-fluid pic rounded" alt="">
+                    <img src="http://aiclub.aivit.tech/iaai-website/assets/img/about/img_2.png" class="img-fluid pic rounded" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'vit')" id="defaultOpen">VIT Bhopal</button>
+                    <button class="tablinks" onclick="openCity(event, 'scse')">SCSE</button>
+                    <button class="tablinks" onclick="openCity(event, 'Division')">AI Division</button>
+                    <button class="tablinks" onclick="openCity(event, 'Club')">AI Club</button>
+                </div>
+                <!-- Tab content -->
+                <div id="vit" class="tabcontent">
+                    <div style="height: 100px;"></div>
+                    <h3>VIT Bhopal</h3>
+                    <p>VIT Bhopal University, envisioned with a new global outlook will empower its aspirants to attain excellence through learning. Starting from the 2017-18 academic year, the new ultra- modern University campus, sprawling over 300 acres,
+                        is in the town of Kothrikalan, surrounded by green, lush fields and a serene environment. This new and contemporary campus is aiming to become the primary hub of education, with leading edge and high-tech developments in a wide
+                        variety of areas. Collaboration with reputed national and international organizations and strategic partnerships with universities around the world are being established, to prepare a globally competent generation of professionals.</p>
+                </div>
+                <div id="scse" class="tabcontent">
+                    <div style="height: 100px;"></div>
+                    <h3>SCSE</h3>
+                    <p>The School of Computing Science & Engineering institutes awareness in wide-ranging programmes such as Artificial Intelligence and Machine Learning, Cyber Security and Digital Forensics, Computational and Data Sciences, Gaming Technology
+                        and Health Informatics.</p>
+                </div>
+                <div id="Division" class="tabcontent">
+                    <div style="height: 100px;"></div>
+                    <h3>AI Division</h3>
+                    <p>The fields of Artificial Intelligence and Machine Learning are two domains that are playing a significant role in the fast-changing world of advanced technologies. The latest trends in AI & ML are aiding different business sectors
+                        and even professionals in reimagining the viability of varied possibilities in data predictions, analysis and optimization of possible potential scenarios and successfully tackling the given tasks.</p>
+                </div>
+                <div id="Club" class="tabcontent">
+                    <div style="height: 100px;"></div>
+                    <h3>AI Club</h3>
+                    <p>AI Club is one of the few clubs of VIT Bhopal which successfully hosted numerous national as well as international events such as AI Conclave. As we know, AI goes hand in hand with automation, thus one of our Aim is to create systems
+                        adaptive through the use of Artificial Intelligence. We organize events such as debates, webinars, competitions, to showcase the skills of our members as well as learn alongside them and improve our analyzing skills and maybe even
+                        develop some new skills along the way, the possibilities are endless. The main goal of AI Club is to provide students with Industry level experience, which would help them in their future. Every member is provided equal opportunities
+                        as well as a platform to sharpen and showcase their talents.</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="about_conf">
+            <div class="line_head">
+                <span class="line"></span>
+                <h1>ABOUT CONFERENCE</h1>
+                <span class="line"></span>
+            </div>
+            <div class="row ">
+                <div class="col-lg-6">
+                    <div class="about_conf_img-top">
+                        <img class="img-fluid" src="images/aboutconf.png" alt="">
                     </div>
-                    <div class="col-lg-6 hero-img">
-                        <img class="img-fluid" src="https://aivit.tech/img/aiml.png" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <div class="about_conf-contents">
+                        <h3 class="text-red">Welcome to IAAI</h3>
+                        <h2>Industrial Applications of Artificial Intelligence</h2>
+                        <span class="divider"></span>
+                        <br>
+                        <p> IAAI is an international conference being conducted for 3 days, from the 21st to the 23rd of April, 2022. It involves the industrial applications of AI and focuses on the same in Sensing, Automation, Process Control, Production,
+                            and Quality Assurance towards Industry 4.0. </p>
+                        <br>
+                        <p> The motto of the conference is to impart knowledge about the various ways in which AI is bringing about an industrial revolution, called Industry 4.0. The panel of speakers includes experts from India and abroad, faculties, researchers,
+                            industry personnel, Academia and R&D scholars, and students. </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="papers" class="about">
+        <br><br><br><br><br>
+        <div class="line_head">
+            <span class="line"></span>
+            <h1>CALL FOR PAPERS</h1>
+            <span class="line"></span>
+        </div>
+    </div>
+    <div class=" ">
+    </div>
+    <script src="js/tabs.js"></script>
+    <script src="dist/script.js"></script>
     <div style="height: 1000px;"></div>
     <!-- JavaScript Bundle with Popper -->
     <script src="js/script.js"></script>

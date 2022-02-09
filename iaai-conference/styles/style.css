@@ -10,25 +10,33 @@ body::-webkit-scrollbar {
 }
 
 body {
-    background-color: #124265;
+    background-color: rgb(255, 255, 255);
+}
+
+.text-red {
+    color: #f72b2b;
 }
 
 .text-white {
-    color: white;
+    color: rgb(255, 255, 255)
+}
+
+.text-green {
+    color: #48ff00;
 }
 
 #header {
     transition: all 0.5s;
-    /* background: rgb(9, 12, 43); */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 997;
-    padding: 18px 0px;
+    padding: 5px 0px;
     /* border-bottom: 1px solid #e6f2fb; */
 }
 
 #header.header-scrolled {
     border-bottom: 1px solid white;
-    border-color: #fff;
-    background: white;
+    border-color: #000;
+    background: #0000;
     box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
@@ -58,8 +66,14 @@ body {
     }
 }
 
+
+/* .topnav {
+    background-color: #00000098;
+} */
+
 .navbar {
     padding: 0;
+    /* background-color: #00000098; */
 }
 
 .navbar ul {
@@ -347,7 +361,7 @@ body {
 
 .hero-heading {
     overflow: hidden;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -361,10 +375,22 @@ h4 {
     padding-right: 10px;
 }
 
+.hero-heading h4 {
+    font-size: 2em;
+}
+
 .hero-heading h1 {
     font-size: 3.6em;
     font-weight: 800;
 }
+
+
+/* .text-gradient {
+    text-transform: uppercase;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
 
 .hero-img {
     display: flex;
@@ -373,7 +399,7 @@ h4 {
 }
 
 .hero-info {
-    margin-top: 2rem;
+    margin-top: 4%;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -403,7 +429,9 @@ h4 {
 
 #demo {
     font-size: 3em;
-    color: #fff;
+    font-weight: 700;
+    /* color: #fff; */
+    color: #48ff00;
 }
 
 .glow-on-hover {
@@ -472,4 +500,200 @@ h4 {
     100% {
         background-position: 0 0;
     }
+}
+
+.about-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.line_head {
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 10%;
+    overflow: hidden;
+}
+
+.line_head .line {
+    margin-left: 40%;
+    height: 1px;
+    border-top: 10px solid #EC008C;
+    display: block;
+    position: relative;
+    top: 1px;
+    width: 100%;
+    position: relative;
+    top: 1px;
+    width: 20%;
+    overflow: hidden;
+}
+
+.about h1 {
+    text-align: center;
+    color: #515151;
+    /* text-shadow: 0 0 5px #005564, 0 0 10px #005564, 0 0 20px #005564, 0 0 30px #005564, 0 0 40px #005564; */
+    /* padding-left: 20px; */
+    /* padding-left: 20px; */
+    font-weight: 800;
+    overflow: hidden;
+    /* letter-spacing: 5px; */
+}
+
+
+/* Style the tab */
+
+.tab {
+    margin-top: 25px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: #515151;
+    z-index: 3;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+
+.tab button {
+    width: 25%;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #ccc;
+    font-weight: 600;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ec008c;
+    color: #fffefe;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #EC008C;
+    color: #fffefe;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    margin-top: -77px;
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 94%;
+    position: relative;
+    padding-top: 100px;
+    display: none;
+    padding: 8px 22px;
+    background-color: rgb(233, 230, 230);
+    border-top: none;
+    /* height: 60vh; */
+    border-radius: 15px;
+    /* height: 60%; */
+}
+
+
+/* Go from zero to full opacity */
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tabcontent h3,
+p {
+    text-align: justify;
+    overflow: hidden;
+    animation: fadeEffect 1s;
+}
+
+.pic-ctn {
+    overflow: hidden;
+    margin-top: 10px;
+    position: relative;
+    height: 300px;
+}
+
+.pic-ctn img {
+    border-radius: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(60px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+}
+
+.pic-ctn>img {
+    border-radius: 2px;
+    position: absolute;
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+img:nth-child(3) {
+    animation-delay: 4s;
+}
+
+img:nth-child(4) {
+    animation-delay: 6s;
+}
+
+img:nth-child(5) {
+    animation-delay: 8s;
+}
+
+img:nth-child(6) {
+    animation-delay: 8s;
+}
+
+.about-container {
+    margin: 1%;
+}
+
+.about_conf_img-top {
+    padding-left: 35px;
+}
+
+.about_conf_img-top img {
+    aspect-ratio: 1;
+    width: 90%;
 }
