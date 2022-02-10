@@ -1202,7 +1202,7 @@ a {
     text-transform: uppercase;
     color: #f72b2b;
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .timeline-steps {
@@ -1351,4 +1351,13 @@ ul.list-style-none li a {
 
 .w-30px {
     width: 30px
+}
+
+.rules h1 {
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f72b2b;
+    font-size: 30px;
+    font-weight: 500;
 }
